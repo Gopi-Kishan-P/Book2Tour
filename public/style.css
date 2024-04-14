@@ -1,0 +1,82 @@
+:root{
+	--primary-color: rgb(161, 104, 0);
+}
+
+#carouselExampleAutoplaying{
+	height: 100vh;
+}
+
+*{
+	box-sizing: border-box;
+}
+.black-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.myImage {
+	height: 100%;
+	object-fit: cover;
+}
+
+.main-class{
+	top: 0;
+	width: 96vw;
+}
+
+.main-head-1{
+	font-size: 4rem;
+	color: white;
+	font-weight: 700;
+	line-height: 120%;
+}
+.main-head-2{
+	font-size: 1.5rem;
+	color: white;
+	font-weight: 600;
+}
+
+.highlight{
+	color: wheat;
+	font-weight: 900;
+}
+
+.my-date-picker{
+	width: 50% !important;
+}
+
+.my-radio{
+	width: 48% !important;
+}
+
+input:checked {
+    accent-color: #232323 !important;
+}
+
+.two-items{
+}
+
+.book-btn{
+	width: 100%;
+	background-color: var(--primary-color) !important;
+	border-color: var(--primary-color) !important;
+}
+
+.adjust{
+	height: 10vh;
+}
+
+@media only screen and (max-width: 992px) {
+	.two-items{
+		height: 66vh !important;
+	}
+	
+	.adjust{
+		height: 40vh;
+	}
+	
+}
