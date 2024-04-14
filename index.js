@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
 	res.sendFile(__dirname + "/public/")
 })
 
-app.post("/success", async (req, res) => {
+app.post("/", async (req, res) => {
 	let bookingData = req.body;
 	bookingData['bookedOn'] = new Date();
 	const docRef = await addDoc(collection(db, "bookings"), bookingData);
